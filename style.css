@@ -1,0 +1,66 @@
+header{
+    padding: 50px 100px;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    padding-right: 20px;
+}
+
+.section-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-head .section-img{
+    background-image: url('images/Circle\ design.svg');
+}
+
+.prebook{
+   
+}
+
+.sponsars-section{
+    display: flex;
+}
+.container {
+    gap: 12px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.product {
+    border: 2px solid tomato;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.product img{
+    width: 100%;
+}
+
+/* smaller device */
+@media screen and (max-width:576px) {
+    .container {
+        /* display: grid; */
+        grid-template-columns: repeat(2, 1fr);
+
+        .product{
+            background-color: aqua;
+        }
+    }}
+    @media screen and (max-width: 992px) and (min-width: 577px){
+
+.container {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+
+}
